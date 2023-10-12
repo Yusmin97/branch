@@ -1,6 +1,10 @@
 const http = require('http');
 
-const server = http.createServer((req, res) => {});
+const server = http.createServer((req, res) => {
+  res.writeHead(200, { 'content-Type': 'text/planin' });
+  res.write('향마루');
+  res.end();
+});
 
 server.listen(3500, (err) => {
   if (!err) {
