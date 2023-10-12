@@ -2,7 +2,7 @@ const http = require('http');
 
 const server = http.createServer((req, res) => {
   res.writeHead(200, { 'content-Type': 'text/planin' });
-  res.write('향마루');
+  res.write('소사');
   res.end();
 });
 
